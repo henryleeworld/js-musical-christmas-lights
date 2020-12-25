@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="聖誕點燈音樂秀" />
+        <meta property="og:description" content="燈光會隨著音樂的不同產生不一樣的點燈效果，隨著燈色變換渲染，讓整體環境融入劇場般的意境，更增添了聖誕的氛圍。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/musical-christmas-lights.css" />
+        <title>聖誕點燈音樂秀</title>
+    </head>
+    <body>
+        <div id="overlay">
+            <ul>
+                <li class="title">選擇音樂</li>
+                <li>
+                    <button class="btn" id="btnA" type="button">
+                        西門·潘拉克的《雪花飄落》
+                    </button>
+                </li>
+                <li><button class="btn" id="btnB" type="button">多特的《這個聖誕節》</button></li>
+                <li><button class="btn" id="btnC" type="button">TRG·班克斯的《旅館沒有房間》</button></li>
+                <li><button class="btn" id="btnD" type="button">馬克·史密比的《爵士聖誕夜》</button></li>
+                <li class="separator">或是</li>
+                <li>
+                    <input type="file" id="upload" hidden />
+                    <label for="upload">上傳檔案</label>
+                </li>
+            </ul>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r124/three.min.js" integrity="sha512-jeYvJdyAYkpQCY/omvCYQo89qA5YxDW4JBT7COPsHT2sOAanwxkZRFeP9gc69b5reSDpZIoyCqZQZcWZkbB5Gw==" crossorigin="anonymous" defer></script>
+        <script src="js/EffectComposer.js" defer></script>
+        <script src="js/RenderPass.js" defer></script>
+        <script src="js/ShaderPass.js" defer></script>
+        <script src="js/CopyShader.js" defer></script>
+        <script src="js/LuminosityHighPassShader.js" defer></script>
+        <script src="js/UnrealBloomPass.js" defer></script>
+        <script src="js/musical-christmas-lights.js" defer></script>
+    </body>
+</html>
